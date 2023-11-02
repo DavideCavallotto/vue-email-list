@@ -5,7 +5,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            message: 'Hello Vue!',            
+            message: 'User Mail',            
             arrayMail: [],
             stringMail:'',
             num: 10

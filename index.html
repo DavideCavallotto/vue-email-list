@@ -9,13 +9,19 @@
     <!-- includiamo axios prima del nostro js file -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
+<style>
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+</style>
 
 <body>
     <div id="app">
         <h1>{{ message }}</h1>
         <ul v-show="arrayMail.length === num">
             <li v-for="mail in arrayMail">
-                {{ mail }}
+                <a href="#">{{ mail }}</a>
             </li>
         </ul>
         
