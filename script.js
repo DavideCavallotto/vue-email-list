@@ -6,8 +6,7 @@ createApp({
     data() {
         return {
             message: 'User Mail',            
-            arrayMail: [],
-            stringMail:'',
+            arrayMail: [],            
             num: 10
         }
     },
@@ -18,8 +17,8 @@ createApp({
                 .then((res) => {
                     console.log(res, res.data)
                     const mail = res.data.response
-                    this.stringMail = mail
-                    this.arrayMail.push(this.stringMail)
+                    console.log(mail)                    
+                    this.arrayMail.push(mail)
                     
                 })
         },
